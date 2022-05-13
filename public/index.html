@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "media",
+        theme: {
+          fontFamily: {
+            primary: ["Titillium Web", "sans"],
+            secondary: ["sans"],
+            sans: ["Open Sans"],
+            serif: ["Georgia", "serif"],
+            mono: ["Menlo", "Lucida Console", "mono"]
+          },
+          extend: {
+            colors: {
+              transparent: "transparent",
+              content: { primary: "#232D5B" },
+              fill: { primary: "#E6E9F0", secondary: "#F7FAFC" },
+              "Tiro.health blue": {
+                DEFAULT: "#007FFE",
+                "50": "#FBFDFF",
+                "100": "#DFEFFF",
+                "200": "#A7D3FF",
+                "300": "#6FB7FF",
+                "400": "#379BFF",
+                "500": "#007FFE",
+                "600": "#005BB7",
+                "700": "#00386F",
+                "800": "#001428",
+                "900": "#000000"
+              },
+              "Tiro.health manatee": {
+                DEFAULT: "#979BA5",
+                "50": "#EAEBF3",
+                "100": "#E1E3EA",
+                "200": "#CFD0D8",
+                "300": "#BEBFC6",
+                "400": "#9DA0AA",
+                "500": "#7C808D",
+                "600": "#53596A",
+                "700": "#373C49",
+                "800": "#161A22",
+                "900": "#030507"
+              }
+            },
+            transitionProperty: {
+              "min-height": "min-height"
+            }
+          }
+        }
+      };
+    </script>
+    <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+
+  <body>
+    <noscript>
+      Tiro.health Editor Playground
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>
